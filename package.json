@@ -4,15 +4,26 @@
   "description": "Structure of ethereum contract in solidity language",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "author": {
     "name": "Vitiko",
     "email": "vitiko@mail.ru"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitiko/solidity-structure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vitiko/solidity-structure/issues"
+  },
   "license": "ISC",
   "dependencies": {
     "solidity-parser": "^0.2.0",
     "yargs": "^6.6.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
