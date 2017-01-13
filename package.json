@@ -4,7 +4,9 @@
   "description": "Structure of ethereum contract in solidity language",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "npm run lint && ./node_modules/.bin/mocha --reporter spec",
+    "lint": "./node_modules/.bin/eslint lib/ *.js tests/ && echo Lint passed.",
+    "test-cov": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha"
   },
   "author": {
     "name": "Vitiko",
@@ -24,6 +26,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0"
   }
 }
