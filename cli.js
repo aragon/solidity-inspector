@@ -14,4 +14,4 @@ if (argv.source) {
 } else {
     structure = SolidityStructure.parseFile(argv._[0]);
 }
-console.log(JSON.stringify(structure, null, 2));
+console.log(JSON.stringify(structure.toJSON(), null, 2));
