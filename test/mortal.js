@@ -8,29 +8,53 @@ describe('Test base ethereum contracts', function () {
     var structure = SolidityStructure.parseFile(__dirname + '/fixture/Mortal.sol');
     expect(structure.toJSON()).to.deep.equal(
       {
-        constantFunctions: {},
         contract: {
-          constructor: {
-            description: 'this function is executed at initialization and sets the owner of the contract',
-            params: {},
-            title: 'this function is executed at initialization and sets the owner of the contract'
-          },
-          description: 'Contract can be destroyed by owner',
+
+          constructor: null,
+          // constructor: {
+          //   description: 'this function is executed at initialization and sets the owner of the contract',
+          //   params: {},
+          //   title: 'this function is executed at initialization and sets the owner of the contract'
+          // },
+          title: 'Contract can be destroyed by owner',
+          description: '',
           name: 'Mortal',
           params: {},
-          title: 'Contract can be destroyed by owner'
         },
+
+        constantFunctions: {
+          owner: {
+            title: 'Owner of the contract',
+            description: '',
+            params: {},
+            returns: {
+              owner: {
+                description: 'Owner of the contract',
+                type: 'address'
+              }
+            }
+          }
+        },
+
+
+
         events: {},
         functions: {
           kill: {
-            description: 'Function to recover the funds on the contract',
+            title: 'Function to recover the funds on the contract',
             params: {},
-            title: 'Function to recover the funds on the contract'
+            description : '',
           }
         },
-        parents: {},
+        parents: {
+          Owned: './Owned.sol'
+        },
         source: {
-          imports: [],
+          imports: [{
+            alias: 'Owned',
+            defaultAlias: 'Owned',
+            from: './Owned.sol'
+          }],
           pragma: '^0.4.4'
         }
       }
