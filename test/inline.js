@@ -27,6 +27,7 @@ contract test {
           pragma: undefined
         },
         parents: {},
+        structs: {},
         events: {},
         functions: {
           multiply: {
