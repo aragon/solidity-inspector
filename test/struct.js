@@ -12,6 +12,7 @@ describe('Test contract with struct', function () {
         MyStruct: {
           title: 'my structure short description',
           description: 'My structure lon long description',
+          paramsSeq : ['someString','someUint','someAddress'],
           params: {
             someString: {
               description: 'Description of string param',

@@ -27,6 +27,8 @@ describe('Test base ethereum contracts', function () {
             title: 'Owner of the contract',
             description: '',
             params: {},
+            paramsSeq: [],
+
             returns: {
               owner: {
                 description: 'Owner of the contract',
@@ -43,6 +45,7 @@ describe('Test base ethereum contracts', function () {
           kill: {
             title: 'Function to recover the funds on the contract',
             params: {},
+            paramsSeq: [],
             description : '',
           }
         },

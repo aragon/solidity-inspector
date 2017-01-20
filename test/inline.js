@@ -33,6 +33,7 @@ contract test {
           multiply: {
             title: 'multiply',
             description: '',
+            paramsSeq: ['a'],
             params: {
               a: {
                 type: 'uint'
