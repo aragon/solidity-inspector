@@ -10,23 +10,25 @@ describe('Test contract with struct', function () {
     expect(structure.toJSON().structs).to.deep.equal(
       {
         MyStruct: {
+          name: 'MyStruct',
           title: 'my structure short description',
           description: 'My structure lon long description',
-          paramsSeq : ['someString','someUint','someAddress'],
+          paramsSeq: ['someString', 'someUint', 'someAddress'],
           params: {
             someString: {
+              name : 'someString',
               description: 'Description of string param',
-              optional: false,
               type: 'string',
               typeHint: null
             },
             someUint: {
+              name : 'someUint',
               description: '',
-              optional: false,
               type: 'uint',
               typeHint: null,
             },
             someAddress: {
+              name : 'someAddress',
               type: 'address'
             },
           }

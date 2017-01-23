@@ -29,13 +29,16 @@ contract test {
         parents: {},
         structs: {},
         events: {},
+        enums : {},
         functions: {
           multiply: {
+            name: 'multiply',
             title: 'multiply',
             description: '',
             paramsSeq: ['a'],
             params: {
               a: {
+                name : 'a',
                 type: 'uint'
               }
             },

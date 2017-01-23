@@ -24,6 +24,7 @@ describe('Test base ethereum contracts', function () {
         structs: {},
         constantFunctions: {
           owner: {
+            name : 'owner',
             title: 'Owner of the contract',
             description: '',
             params: {},
@@ -41,8 +42,10 @@ describe('Test base ethereum contracts', function () {
 
 
         events: {},
+        enums: {},
         functions: {
           kill: {
+            name : 'kill',
             title: 'Function to recover the funds on the contract',
             params: {},
             paramsSeq: [],
