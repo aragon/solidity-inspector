@@ -31,7 +31,7 @@ describe('Test base ethereum contracts', function () {
             paramsSeq: [],
 
             returns: {
-              owner: {
+              address: {
                 description: 'Owner of the contract',
                 type: 'address'
               }
