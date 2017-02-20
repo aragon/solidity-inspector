@@ -27,11 +27,13 @@ describe('Test contract with public array', function () {
           paramsSeq: ['arrayIndex'],
 
           returns: {
-            string: {
+            return0: {
               description: '',
               type: 'string'
             }
-          }
+          },
+
+          returnsSeq: ['return0']
 
         },
 
@@ -49,11 +51,29 @@ describe('Test contract with public array', function () {
           },
           paramsSeq: ['arrayIndex'],
           returns: {
-            MyStruct: {
+            someString: {
+              name: 'someString',
+              description: 'Description of string param',
+              type: 'string',
+              typeHint: null
+            },
+            someUint: {
+              name: 'someUint',
               description: '',
-              type: 'MyStruct'
+              type: 'uint',
+              typeHint: null,
+            },
+            someAddress: {
+              name: 'someAddress',
+              type: 'address'
             }
-          }
+          },
+          returnsSeq: [
+            'someString',
+            'someUint',
+            'someAddress'
+          ]
+
 
         },
 
@@ -73,14 +93,29 @@ describe('Test contract with public array', function () {
             'arrayIndex'
           ],
           returns: {
-            MyStruct: {
-              'description': '',
-              'type': 'MyStruct'
+            someString: {
+              name: 'someString',
+              description: 'Description of string param',
+              type: 'string',
+              typeHint: null
+            },
+            someUint: {
+              name: 'someUint',
+              description: '',
+              type: 'uint',
+              typeHint: null,
+            },
+            someAddress: {
+              name: 'someAddress',
+              type: 'address'
             }
-          }
-
+          },
+          returnsSeq: [
+            'someString',
+            'someUint',
+            'someAddress'
+          ]
         }
-
 
       }
     );

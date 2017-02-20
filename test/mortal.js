@@ -31,11 +31,13 @@ describe('Test base ethereum contracts', function () {
             paramsSeq: [],
 
             returns: {
-              address: {
+              return0: {
                 description: 'Owner of the contract',
                 type: 'address'
               }
-            }
+            },
+
+            returnsSeq: ['return0']
           }
         },
 
