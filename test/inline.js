@@ -29,7 +29,7 @@ contract test {
         parents: {},
         structs: {},
         events: {},
-        enums : {},
+        enums: {},
         functions: {
           multiply: {
             name: 'multiply',
@@ -38,7 +38,7 @@ contract test {
             paramsSeq: ['a'],
             params: {
               a: {
-                name : 'a',
+                name: 'a',
                 type: 'uint'
               }
             },
@@ -46,7 +46,11 @@ contract test {
               d: {
                 type: 'uint'
               }
-            }
+            },
+            returnsSeq: [
+              'd'
+            ]
+
           }
         },
         constantFunctions: {}
