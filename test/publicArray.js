@@ -8,7 +8,8 @@ describe('Test contract with public array', function () {
     var structure = SolidityStructure.parseFile(__dirname + '/fixture/HasPublicArray.sol');
 
 
-    expect(structure.toJSON().constantFunctions).to.deep.equal(
+    //test when using JSON.stringify vs .toJSON method
+    expect(JSON.parse (JSON.stringify(structure)).constantFunctions).to.deep.equal(
       {
 
 
