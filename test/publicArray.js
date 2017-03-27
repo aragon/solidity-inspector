@@ -5,7 +5,7 @@ describe('Test contract with public array', function () {
 
   it('structure', function () {
 
-    var structure = SolidityStructure.parseFile(__dirname + '/fixture/HasPublicArray.sol');
+    let structure = SolidityStructure.parseFile(__dirname + '/fixture/HasPublicArray.sol');
 
 
     //test when using JSON.stringify vs .toJSON method
@@ -18,14 +18,14 @@ describe('Test contract with public array', function () {
           title: 'Array of strings is here',
           description: '',
           params: {
-            arrayIndex: {
-              name: 'arrayIndex',
+            index: {
+              name: 'index',
               description: '',
               type: 'uint',
               typeHint: null
             }
           },
-          paramsSeq: ['arrayIndex'],
+          paramsSeq: ['index'],
 
           returns: {
             return0: {
@@ -43,14 +43,14 @@ describe('Test contract with public array', function () {
           name: 'someStructs',
           title: 'Array of structs is here',
           params: {
-            arrayIndex: {
-              name: 'arrayIndex',
+            index: {
+              name: 'index',
               description: '',
               type: 'uint',
               typeHint: null
             }
           },
-          paramsSeq: ['arrayIndex'],
+          paramsSeq: ['index'],
           returns: {
             someString: {
               name: 'someString',
@@ -83,15 +83,15 @@ describe('Test contract with public array', function () {
           name: 'someAnotherStructs',
           title: 'someAnotherStructs',
           params: {
-            arrayIndex: {
-              name: 'arrayIndex',
+            index: {
+              name: 'index',
               description: '',
               type: 'uint',
               typeHint: null
             }
           },
           paramsSeq: [
-            'arrayIndex'
+            'index'
           ],
           returns: {
             someString: {
