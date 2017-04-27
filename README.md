@@ -15,9 +15,8 @@ The goal of it is to take Solidity code as input and return an object as output 
 `npm install solidity-structure`
 
 
-## Usage
+## Usage in code
 
-Then, in your code:
 
 ```javascript
 const SolidityStructure = require("solidity-structure");
@@ -28,6 +27,12 @@ let result = SolidityStructure.parse("contract { ... }");
 // Or, parse a file:
 let result = SolidityStructure.parseFile("./path/to/file.sol");
 ```
+
+## Usage in command line
+
+(suppose `solidity-structure` package installed globally )
+ 
+`user@host:/`solidity-structure MyContract.sol > contract-structure.json  
 
 ## Examples
 
