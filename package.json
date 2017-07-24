@@ -24,7 +24,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "solidity-parser": "^0.2.0",
+    "solidity-parser": "git://github.com/ConsenSys/solidity-parser#master",
     "yargs": "^6.6.0"
   },
   "devDependencies": {
