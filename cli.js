@@ -8,10 +8,10 @@ const SolidityStructure = require('./index.js');
 
 var structure;
 
-
 if (argv.source) {
-  structure = SolidityStructure.parse(argv.source);
+    structure = SolidityStructure.parse(argv.source);
 } else {
-  structure = SolidityStructure.parseFile(argv._[0]);
+    structure = argv._.map(f => SolidityStructure.parseFile(f))
 }
-console.log(JSON.stringify(structure.toJSON(), null, 2));
+structure.map(x => x.toJSON())
+//console.log(JSON.stringify(structure.map(x => x.toJSON()), null, 2));

@@ -14,7 +14,7 @@ module.exports = {
   },
 
   parseFile: function (file, options = {}) {
-
+    console.log('parsing', file)
     if (!file) throw new Error('SolidityStructure.parseFile : File path not provided');
     options.filePath = path.resolve(file);
 
