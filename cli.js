@@ -14,4 +14,4 @@ if (argv.source) {
     structure = argv._.map(f => SolidityStructure.parseFile(f))
 }
 structure.map(x => x.toJSON())
-//console.log(JSON.stringify(structure.map(x => x.toJSON()), null, 2));
+console.log(JSON.stringify(structure.map(x => x.toJSON()), null, 2));
