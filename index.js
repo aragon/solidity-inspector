@@ -8,7 +8,6 @@ const structureCache = new Map();
 
 module.exports = {
   parse: function (source, options = {}) {
-    console.log('parsing', options.file)
     return new ContractStructure(source, options);
   },
 
