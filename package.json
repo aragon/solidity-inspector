@@ -1,7 +1,7 @@
 {
-  "name": "solidity-structure",
-  "version": "0.1.14",
-  "description": "Structure of ethereum contract in solidity language",
+  "name": "solidity-inspector",
+  "version": "0.1.0",
+  "description": "Extract useful data from Solidity source code",
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && ./node_modules/.bin/mocha --reporter spec",
@@ -9,18 +9,18 @@
     "test-cov": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha"
   },
   "author": {
-    "name": "Vitiko",
-    "email": "vitiko@mail.ru"
+    "name": "Jorge Izquierdo",
+    "email": "jorge@aragon.one"
   },
   "bin": {
     "solidity-structure": "./cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vitiko/solidity-structure.git"
+    "url": "https://github.com/aragon/solidity-inspector.git"
   },
   "bugs": {
-    "url": "https://github.com/vitiko/solidity-structure/issues"
+    "url": "https://github.com/aragon/solidity-inspector/issues"
   },
   "license": "ISC",
   "dependencies": {
