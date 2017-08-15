@@ -1,6 +1,6 @@
 {
   "name": "solidity-inspector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Extract useful data from Solidity source code",
   "main": "index.js",
   "scripts": {
