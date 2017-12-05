@@ -8,10 +8,10 @@
     "lint": "./node_modules/.bin/eslint lib/ *.js tests/ && echo Lint passed.",
     "test-cov": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha"
   },
-  "author": {
-    "name": "Jorge Izquierdo",
-    "email": "jorge@aragon.one"
-  },
+  "author": "Aragon Institution MTU <contact@aragon.one>",
+  "contributors": [
+    "Jorge Izquierdo <jorge@aragon.one>"
+  ],
   "bin": {
     "solidity-structure": "./cli.js"
   },
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/aragon/solidity-inspector/issues"
   },
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "solidity-parser": "^0.4.0",
     "yargs": "^6.6.0"
